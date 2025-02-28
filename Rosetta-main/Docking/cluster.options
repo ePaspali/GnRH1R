@@ -1,0 +1,9 @@
+-in:file:l pdb_list #specifies the list of PDB files to be clustered.
+-in:file:fullatom #indicates that full-atom structures are used for clustering.
+-cluster:energy_based_clustering:cluster_radius 1.0 #sets the clustering radius to 1.0 Å. 
+-cluster:energy_based_clustering:limit_structures_per_cluster 0 #no limit on the number of structures per cluster. 
+-cluster:energy_based_clustering:cluster_by bb_cartesian #clustering based on backbone Cartesian coordinates. 
+-cluster:energy_based_clustering:use_CB false #disables the use of Cβ atoms in clustering.
+-cluster:energy_based_clustering:cyclic false #specifies non- cyclic clustering 
+-cluster:energy_based_clustering:cluster_cyclic_permutations false # disables clustering of cyclic permutations. 
+-cluster:energy_based_clustering:perform_ABOXYZ_bin_analysis true #enables analysis of ABOXYZ bin during clustering (Ramachandran).
