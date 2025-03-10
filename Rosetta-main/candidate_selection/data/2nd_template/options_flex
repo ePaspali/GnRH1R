@@ -1,0 +1,13 @@
+-in:file:spanfile 7BR3_PEP.span
+-membrane:Membed_init
+-membrane:Mhbond_depth
+-score:weights membrane_highres
+-scorefile score.sc
+-flexPepDocking:lowres_preoptimize
+-flexPepDocking:pep_refine
+-ex1
+-ex2aro
+-nstruct 2000
+-use_input_sc
+
+
